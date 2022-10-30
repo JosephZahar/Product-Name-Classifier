@@ -6,21 +6,21 @@ from snowflake.sqlalchemy import URL
 
 # connect to snowflake using credentials
 ctx1 = snowflake.connector.connect(
-    user='JOSEPH',
-    password='6AZLiMZXhejPufk@!vwxfaBhaeR6Y7',
-    account='az91838.eu-west-1',
-    role = 'PYTHON'
+    user='XXX',
+    password='XXXX',
+    account='XXXX',
+    role = 'XXX'
     )
 
 # create cursor
 cursor = ctx1.cursor()
-# extract all the product names from ORDERPAY.DOMAIN.ORDER_ITEM
-cursor.execute('SELECT PRODUCT_NAME FROM ORDERPAY.DOMAIN.ORDER_ITEM')
+# extract all the product names from XXXXX
+cursor.execute('SELECT PRODUCT_NAME FROM XXXXX')
 # clean the data and add them to a list
 product_names = [i[0] for i in cursor.fetchall() if i[0] != None]
 
-# create PRODUCT_CATEGORY_PYTHON table in ORDERPAY -> LOOKUP
-sql = "USE DATABASE ORDERPAY"
+# create PRODUCT_CATEGORY_PYTHON table in XXXX -> LOOKUP
+sql = "USE DATABASE XXXX"
 cursor.execute(sql)
 
 sql = "USE SCHEMA LOOKUP"
@@ -38,12 +38,12 @@ final_df = generate_categories(product_names)
 
 # connect to snowflake using sqlalchemy and define credentials of the table location
 engine = create_engine(URL(
-    user='JOSEPH',
-    password='6AZLiMZXhejPufk@!vwxfaBhaeR6Y7',
-    account='az91838.eu-west-1',
-    database = 'ORDERPAY',
-    schema = 'LOOKUP',
-    role = 'PYTHON'
+    user='XXXX',
+    password='XXXXXXXX',
+    account='XXXX',
+    database = 'XXXX',
+    schema = 'XXXX',
+    role = 'PYTHOXXXXN'
     )).connect()
 
 # feed the table with the dataframe created
