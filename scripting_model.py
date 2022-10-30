@@ -5,7 +5,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
 import string
 
-updated_df = pd.read_excel('/Users/macbookpro/Desktop/OrderPay/Product Labelling using ML/Data/updated_pc_df.xlsx')
+updated_df = pd.read_excel('/Users/macbookpro/Desktop/XXXX/Product Labelling using ML/Data/updated_pc_df.xlsx')
 df_c1 = updated_df.loc[: ,['product_name', 'category_1']]
 df_c2 = updated_df.loc[: ,['product_name', 'category_2']]
 Gluten_free = ['gf', 'gluten free', '(gf)']
