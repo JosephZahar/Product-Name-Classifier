@@ -1,6 +1,8 @@
+ <img alt="Python" src="https://img.shields.io/badge/Python%20-%2314354C.svg?style=flat-square&logo=python&logoColor=white" />
+ 
 # Product-Name-Classifier
 The focus of this repository is to provide a detailed methodology of the steps to automate the categorisation of product names into different granular levels. The project consists of predicting product name categories and then feed them back into our Snowflake data warehouse.
-
+ 
 ## Table of Contents
 
 - [Overview](#overview)
