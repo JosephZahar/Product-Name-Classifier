@@ -22,12 +22,6 @@ Once the data is ready and preprocessed, we will create a pipeline that vectoris
 
 ### Deploying the model to Snowflake
 Once the models have yielded to the desired accuracy, we will deploy the model to our Snowflake data warehouse so that every time new products are 
-<!-- TODO: Add a screenshot of the live project.
-    1. Link to a 'live demo.'
-    2. Describe your overall experience in a couple of sentences.
-    3. List a few specific technical things that you learned or improved on.
-    4. Share any other tips or guidance for others attempting this or something similar.
- -->
 
 ### Built With
 - Data Processing & Manipulation: [Numpy](https://numpy.org), [Pandas](https://pandas.pydata.org)
