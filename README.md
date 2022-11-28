@@ -21,7 +21,8 @@ Next, we will use a heuristic approach to label part of our trainning data befor
 ### Building the Naïve Bayes Models
 Once the data is ready and preprocessed, we will create a pipeline that vectorise our text data and then send it for training. We also propose a grid search approach to obtain sub-optimal hyperparameters. These models will then be evaluated and modified for higher accuracy.
 
-![Screen Shot 2022-11-28 at 11 08 19 AM](https://user-images.githubusercontent.com/70657426/204237841-08df2acf-5b23-45d8-9f44-b80b355b7c70.png)
+![1*GD-PRq_7DRUxBO7xEEkNFA](https://user-images.githubusercontent.com/70657426/204251104-24a8dbb1-2a94-4562-a0a0-d02eb4f095bc.png)
+
 
 ### Deploying the model to Snowflake
 Once the models have yielded to the desired accuracy, we will deploy the model to our Snowflake data warehouse so that every time new products are added to the database, they are directly updated with their corresponding predictions.
