@@ -3,7 +3,9 @@
  
 # Product-Name-Classifier
 The focus of this repository is to provide a detailed methodology of the steps to automate the categorisation of product names into different granular levels. The project consists of predicting product name categories and then feed them back into our Snowflake data warehouse.
- 
+
+ <img width="1270" alt="Screen Shot 2022-11-28 at 11 01 49 AM" src="https://user-images.githubusercontent.com/70657426/204236758-ef18ee3c-ceb0-4e6b-ae12-c27e4599e039.png">
+
 ## Table of Contents
 
 - [Overview](#overview)
