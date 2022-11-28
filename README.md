@@ -4,7 +4,6 @@
 # Product-Name-Classifier
 The focus of this repository is to provide a detailed methodology of the steps to automate the categorisation of product names into different granular levels. The project consists of predicting product name categories and then feed them back into our Snowflake data warehouse.
 
- <img width="1270" alt="Screen Shot 2022-11-28 at 11 01 49 AM" src="https://user-images.githubusercontent.com/70657426/204236758-ef18ee3c-ceb0-4e6b-ae12-c27e4599e039.png">
 
 ## Table of Contents
 
@@ -22,8 +21,12 @@ Next, we will use a heuristic approach to label part of our trainning data befor
 ### Building the Naïve Bayes Models
 Once the data is ready and preprocessed, we will create a pipeline that vectorise our text data and then send it for training. We also propose a grid search approach to obtain sub-optimal hyperparameters. These models will then be evaluated and modified for higher accuracy.
 
+![Screen Shot 2022-11-28 at 11 08 19 AM](https://user-images.githubusercontent.com/70657426/204237841-08df2acf-5b23-45d8-9f44-b80b355b7c70.png)
+
 ### Deploying the model to Snowflake
-Once the models have yielded to the desired accuracy, we will deploy the model to our Snowflake data warehouse so that every time new products are 
+Once the models have yielded to the desired accuracy, we will deploy the model to our Snowflake data warehouse so that every time new products are added to the database, they are directly updated with their corresponding predictions.
+
+ <img width="1270" alt="Screen Shot 2022-11-28 at 11 01 49 AM" src="https://user-images.githubusercontent.com/70657426/204236758-ef18ee3c-ceb0-4e6b-ae12-c27e4599e039.png">
 
 ### Built With
 - Data Processing & Manipulation: [Numpy](https://numpy.org), [Pandas](https://pandas.pydata.org)
